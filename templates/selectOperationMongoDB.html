@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Operation MongoDB</title>
+</head>
+<body>
+    <form action="/selectOperationMongoDB/{{part1}}/{{part2}}" method="POST">
+        <h1>Choose Operation</h1>
+        <h2>Which operation do you want to perform in MongoDB?</h2>
+        <table>
+            <tr>
+                <td>
+                    <select id="operation" name="operation">
+                        <option value="create">Create</option>
+                        <option value="one_insert">One Insert</option>
+                        <option value="bulk_insert">Bulk Insert</option>
+                        <option value="update">Update</option>
+                        <option value="delete">Delete</option>
+                        <option value="download">Download</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="Proceed">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Cassandra</title>
+</head>
+<body>
+   <form action="/downloadCassandra/{{client_id}}/{{client_key}}/{{bundle_path}}" method="POST">
+        <h1>Enter details to download from Cassandra</h1>
+        <table>
+            <tr><td>Keyspace name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Table name: </td><td><input type="text" name="table" id="table"></td></tr>
+            <tr><td>Path (csv): </td><td><input type="text" name="path" id="path"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Download"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

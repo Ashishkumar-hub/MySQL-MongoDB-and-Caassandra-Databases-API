@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Establish Cassandra Connection</title>
+</head>
+<body>
+    <form action="/establishCassandraConnection" method="POST">
+        <h1>Connect to Cassandra Database</h1>
+        <h2>Leave fields blank for local Cassandra connection</h2>
+        <table>
+            <tr><td>Client ID: </td><td><input type="text" name="id" id="id"></td></tr>
+            <tr><td>Client Key: </td><td><input type="text" name="key" id="key"></td></tr>
+            <tr><td>Secure Connect Bundle Path: </td><td><input type="text" name="path" id="path"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Connect"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

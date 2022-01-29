@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update MongoDB</title>
+</head>
+<body>
+    <form action="/updateMongoDB/{{part1}}/{{part2}}" method="POST">
+        <h1>Enter details to update in MongoDB</h1>
+        <table>
+            <tr><td>Database name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Collection name: </td><td><input type="text" name="coll" id="coll"></td></tr>
+            <tr><td>Dictionary data to update: </td><td><input type="text" name="upd_from" id="upd_from"></td></tr>
+            <tr><td>Dictionary data to update with ($set): </td><td><input type="text" name="upd_to" id="upd_to"></td></tr>
+            <tr><td colspan="2">
+                <select id="update_op" name="update_op">
+                    <option value="update_one">Update One</option>
+                    <option value="update_many">Update Many</option>
+                </select>
+            </td></tr>
+            <tr><td colspan="2"><input type="submit" value="Update"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

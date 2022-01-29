@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Insert SQL</title>
+</head>
+<body>
+    <form action="/bulkInsertSql/{{host}}/{{user}}/{{passwd}}" method="POST">
+        <h1>Enter details to bulk insert in MySQL</h1>
+            <table>
+                <tr><td>Database name:</td> <td><input type="text" name="db" id="db"></td></tr>
+                <tr><td>Table name: </td><td><input type="text" name="table" id="table"></td></tr>
+                <tr><td>Attributes: </td> <td><input type="text" name="attr" id="attr"></td></tr>
+                <tr><td>Path (csv): </td><td><input type="text" name="path" id="Path"></td></tr>
+                <tr><td colspan="2"><input type="submit" value="Insert"></td></tr>
+            </table>
+    </form>
+</body>
+</html>

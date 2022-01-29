@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Cassandra</title>
+</head>
+<body>
+    <form action="/createTableCassandra/{{client_id}}/{{client_key}}/{{bundle_path}}" method="POST">
+        <h1>Create Table in Cassandra</h1>
+        <h2>For online Cassandra - DataStax, make sure your keyspace is already created.<br>
+            Hence, leave the Class and Replication Factor fields blank. </h2>
+        <h2>For offline Cassandra, if your keyspace doesn't exist already, enter details in all the fields.<br>
+            If keyspace exists, leave the Class and Replication Factor fields blank. </h2>
+        <table>
+            <tr><td>Keyspace name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Class: </td><td><input type="text" name="class" id="class"></td></tr>
+            <tr><td>Replication Factor: </td><td><input type="text" name="rf" id="rf"></td></tr>
+            <tr><td>Table name: </td><td><input type="text" name="table" id="table"></td></tr>
+            <tr><td>Attributes: </td><td><input type="text" name="attr" id="attr"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Create"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

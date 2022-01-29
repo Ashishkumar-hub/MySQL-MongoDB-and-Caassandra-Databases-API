@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Database</title>
+</head>
+<body style="background-color:tomato;">
+    <form action="/establishConnection" method="POST">
+        <h1 align="center">Welcome To Flask Database API</h1>
+        <h2 align="center">Select the Database</h2>
+        <table align="center">
+            <tr>
+                <td>
+                    <select id="db" name="db">
+                        <option value="mysql">MySQL</option>
+                        <option value="mongodb">MongoDB</option>
+                        <option value="cassandra">Cassandra</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="Proceed to establish connection">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

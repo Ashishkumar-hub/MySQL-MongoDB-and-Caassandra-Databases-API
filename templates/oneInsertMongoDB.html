@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Insert MongoDB</title>
+</head>
+<body>
+    <form action="/oneInsertMongoDB/{{part1}}/{{part2}}" method="POST">
+        <h1>Enter details to insert in MongoDB</h1>
+        <table>
+            <tr><td>Database name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Collection name: </td><td><input type="text" name="coll" id="coll"></td></tr>
+            <tr><td>VALUES (dict/list): </td><td><input type="text" name="attr" id="attr"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Insert"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

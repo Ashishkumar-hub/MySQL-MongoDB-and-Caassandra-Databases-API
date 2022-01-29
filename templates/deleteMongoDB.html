@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete MongoDB</title>
+</head>
+<body>
+    <form action="/deleteMongoDB/{{part1}}/{{part2}}" method="POST">
+        <h1>Enter details to delete in MongoDB</h1>
+        <table>
+            <tr><td>Database name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Collection name: </td><td><input type="text" name="coll" id="coll"></td></tr>
+            <tr><td>WHERE (dict): </td><td><input type="text" name="delete" id="delete"></td></tr>
+            <tr><td colspan="2">
+                <select id="delete_op" name="delete_op">
+                    <option value="delete_one">Delete One</option>
+                    <option value="delete_many">Delete Many</option>
+                </select>
+            </td></tr>
+            <tr><td colspan="2"><input type="submit" value="Delete"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

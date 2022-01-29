@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create SQL</title>
+</head>
+<body>
+    <form action="/createTableSql/{{host}}/{{user}}/{{passwd}}" method="POST">
+        <h1>Create Table in MySQL</h1>
+        <table>
+            <tr><td>Database name: </td><td><input type="text" name="db" id="db"></td></tr>
+            <tr><td>Table name: </td><td><input type="text" name="table" id="table"></td></tr>
+            <tr><td>Attributes: </td><td><input type="text" name="attr" id="attr"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Create"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
